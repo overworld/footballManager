@@ -27,9 +27,7 @@ html, body {
     background-image: url("img/terrain.png");
     background-size: cover;
 }
-#player{
-    position: absolute;
-}
+
 
 
 p {
@@ -37,12 +35,18 @@ p {
 }
 
 .joueur {
-
+    position: absolute;
     padding: 32px 32px;
     border-radius: 50px;
     background-color: #f44336;
 
     transition-duration: 0.4s;
+}
+
+.joueur:nth-child(1)
+{
+    margin-left: 25%;
+
 }
 
 .joueur:hover {
