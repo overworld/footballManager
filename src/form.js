@@ -43,6 +43,7 @@ class form extends Component {
         return (
             <div className="form">
                 <label>Chercher un joueur grace au nom</label>
+                <br/>
                 <input  onChange={(e) => this.onChange(e)} type={"text"} name={"name"}/>
                 <br/>
 

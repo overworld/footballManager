@@ -1,59 +1,62 @@
 .App {
-display: flex;
-  height: 100%;
-  width: 100%;
-  left: 0;
-  top: 0;
+    display: flex;
+    height: 100%;
+    width: 100%;
+    left: 0;
+    top: 0;
 
 }
+
+.root {
+    height: 100vh;
+    width: 100%;
+    position: absolute;
+}
+
 html, body {
-  align-items: center;
-  justify-content: center;
-  height: 100%;
-  width: 100%;
-  display: flex;
-
+    align-items: center;
+    justify-content: center;
+    height: 100vh;
+    width: 100%;
+    display: flex;
 }
 
-.case{
-  height: 100%;
-  width: 50%;
-  background-image: url("img/terrain.png");
-  background-size: 100%;
-}
-/*
-text-align: center;
-align-items: center;
-justify-content: center;
-*/
-
-p{
-  padding: 5px;
+.case {
+    position: center;
+    height: 100%;
+    width: 50%;
+    background-image: url("img/terrain.png");
+    background-size: cover;
 }
 
-.joueur{
 
-  padding: 32px 32px;
-  border-radius: 50px;
-  background-color: #f44336;
-
-  transition-duration: 0.4s;
+p {
+    padding: 5px;
 }
 
-.joueur:hover{
-  padding: 32px 32px;
-  background-color: white;
-  color: black;
-  border: 2px solid #ff3e3e;
+.joueur {
+
+    padding: 32px 32px;
+    border-radius: 50px;
+    background-color: #f44336;
+
+    transition-duration: 0.4s;
 }
 
-.form{
-  height: 100%;
-  width: 50%;
-  right: 0;
-  top: 0;
-  padding: 30px 30px;
-  border: 2px solid black;
+.joueur:hover {
+    padding: 32px 32px;
+    background-color: white;
+    color: black;
+    border: 2px solid #ff3e3e;
+}
+
+.form {
+    height: 100%;
+    width: 50%;
+    right: 0;
+    top: 0;
+    padding: 30px 30px;
+    border: 2px solid black;
 }
 
 
