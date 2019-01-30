@@ -30,3 +30,11 @@
     transform: rotate(360deg);
   }
 }
+
+p{
+  padding: 5px;
+}
+
+button .joueur{
+  border-radius: 10px;
+}
