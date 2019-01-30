@@ -1,4 +1,4 @@
-###### Link to NOW : https://footballmanager-qq04qj6d9.now.sh/
+###### Link to NOW : https://zeit.co/dashboard/project/footballmanager
 
 Schema: ![Alt text](schema.png "Title")
 
