@@ -26,9 +26,16 @@ html, body {
     width: 50%;
     background-image: url("img/terrain.png");
     background-size: cover;
+
 }
 
+#label{
+    text-align: center;
+    align-items: center;
+    justify-content: center;
+    font-size: large;
 
+}
 
 p {
     padding: 5px;
@@ -43,11 +50,80 @@ p {
     transition-duration: 0.4s;
 }
 
-.joueur:nth-child(1)
-{
+.stylee {
+    position: absolute;
+}
+
+.thespan {
+    color: white;
+    position: relative;
+}
+
+
+.stylee:nth-child(1) {
+    margin-left: 25%;
+    margin-top: 2%;
+
+}
+
+.stylee:nth-child(2) {
+    margin-top: 15%;
+    margin-left: 10%;
+
+}
+
+.stylee:nth-child(3) {
+    margin-top: 15%;
+    margin-left: 20%;
+}
+
+.stylee:nth-child(4) {
+    margin-top: 15%;
+    margin-left: 30%;
+}
+
+.stylee:nth-child(5) {
+    margin-top: 15%;
+    margin-left: 40%;
+
+}
+
+.stylee:nth-child(6) {
+    margin-top: 25%;
+    margin-left: 15%;
+
+}
+
+.stylee:nth-child(7) {
+    margin-top: 25%;
     margin-left: 25%;
 
 }
+
+.stylee:nth-child(8) {
+    margin-top: 25%;
+    margin-left: 35%;
+
+}
+
+.stylee:nth-child(9) {
+    margin-top: 35%;
+    margin-left: 15%;
+
+}
+
+.stylee:nth-child(10) {
+    margin-top: 35%;
+    margin-left: 25%;
+
+}
+
+.stylee:nth-child(11) {
+    margin-top: 35%;
+    margin-left: 35%;
+
+}
+
 
 .joueur:hover {
     padding: 32px 32px;

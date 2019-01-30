@@ -34,9 +34,12 @@ class App extends Component {
 
         for (let i = 0; i < this.state.players.length; i++) {
             listejoueur.push(
-                <button className={"joueur"} key={i} onClick={() => this.setState({currentPlayer: i})}>
-                    {this.state.players[i] && <p>{this.state.players[i].player_name}</p>}
-                </button>
+                <div className="stylee">
+                    {this.state.players[i] && <span className="thespan">{this.state.players[i].player_name}</span>}
+                    <br/>
+                    <button className={"joueur"} key={i} onClick={() => this.setState({currentPlayer: i})}>
+                    </button>
+                </div>
             );
 
         }
@@ -45,10 +48,10 @@ class App extends Component {
 
             <div className="App">
                 <div className="case">
-                {listejoueur}
+                    {listejoueur}
                     <br/>
                     <div id="player">
-                    <span>Joueur N°{this.state.currentPlayer}</span>
+                        <span id={"label"}>Joueur N°{this.state.currentPlayer}</span>
                     </div>
                     <br/>
                 </div>

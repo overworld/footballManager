@@ -21,11 +21,14 @@ class form extends Component {
             rawData.json().then(value => {
                 //console.log("Json value", value);
 
+
+                //Il aurait été préférable de mettre un timeOut pour empecher de faire trop de requete
                 let searchList = [];
                 let a = value.result;
                 if (a) {
                     for (let i = 0; i < Math.min(4, a.length); i++) {
-                        searchList.push(<button key={i}  onClick={ () => this.props.onSelected(a[i])}>{a[i].player_name}</button>)
+                        searchList.push(<button key={i}
+                                                onClick={() => this.props.onSelected(a[i])}>{a[i].player_name}</button>)
                     }
 
                 }
@@ -42,9 +45,9 @@ class form extends Component {
 
         return (
             <div className="form">
-                <label>Chercher un joueur grace au nom</label>
+                <label id="label">Chercher un joueur</label>
                 <br/>
-                <input  onChange={(e) => this.onChange(e)} type={"text"} name={"name"}/>
+                <input onChange={(e) => this.onChange(e)} type={"text"} name={"name"}/>
                 <br/>
 
                 {this.state.searchList}
