@@ -1,40 +1,59 @@
 .App {
-  text-align: center;
-}
+display: flex;
+  height: 100%;
+  width: 100%;
+  left: 0;
+  top: 0;
 
-.App-logo {
-  animation: App-logo-spin infinite 20s linear;
-  height: 40vmin;
 }
-
-.App-header {
-  background-color: #282c34;
-  min-height: 100vh;
-  display: flex;
-  flex-direction: column;
+html, body {
   align-items: center;
   justify-content: center;
-  font-size: calc(10px + 2vmin);
-  color: white;
+  height: 100%;
+  width: 100%;
+  display: flex;
+
 }
 
-.App-link {
-  color: #61dafb;
+.case{
+  height: 100%;
+  width: 50%;
+  background-image: url("img/terrain.png");
+  background-size: 100%;
 }
-
-@keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
-  }
-  to {
-    transform: rotate(360deg);
-  }
-}
+/*
+text-align: center;
+align-items: center;
+justify-content: center;
+*/
 
 p{
   padding: 5px;
 }
 
-button .joueur{
-  border-radius: 10px;
+.joueur{
+
+  padding: 32px 32px;
+  border-radius: 50px;
+  background-color: #f44336;
+
+  transition-duration: 0.4s;
 }
+
+.joueur:hover{
+  padding: 32px 32px;
+  background-color: white;
+  color: black;
+  border: 2px solid #ff3e3e;
+}
+
+.form{
+  height: 100%;
+  width: 50%;
+  right: 0;
+  top: 0;
+  padding: 30px 30px;
+  border: 2px solid black;
+}
+
+

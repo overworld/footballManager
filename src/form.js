@@ -6,10 +6,9 @@ class form extends Component {
     constructor() {
         super();
         this.state = {
-            searchList : null
+            searchList: null
         }
     }
-
 
 
     onChange(e) {
@@ -20,21 +19,18 @@ class form extends Component {
         const url = "https://allsportsapi.com/api/football/?&met=Players&playerName=" + player + "&APIkey=" + key;
         fetch(url).then(rawData => {
             rawData.json().then(value => {
-                console.log("Json value", value);
+                //console.log("Json value", value);
 
                 let searchList = [];
                 let a = value.result;
-                if (a)
-                {
-                    for(let i =0; i < Math.min(4,a.length) ; i++  )
-                    {
-                        searchList.push(<button>{a[i].player_name}</button>)
+                if (a) {
+                    for (let i = 0; i < Math.min(4, a.length); i++) {
+                        searchList.push(<button key={i}  onClick={ () => this.props.onSelected(a[i])}>{a[i].player_name}</button>)
                     }
 
                 }
-                this.setState({searchList : searchList});
+                this.setState({searchList: searchList});
 
-                this.props.onSelected(a);
 
             });
 
@@ -47,7 +43,7 @@ class form extends Component {
         return (
             <div className="form">
                 <label>Chercher un joueur grace au nom</label>
-                <input onChange={(e) => this.onChange(e)} type={"text"} name={"name"}/>
+                <input  onChange={(e) => this.onChange(e)} type={"text"} name={"name"}/>
                 <br/>
 
                 {this.state.searchList}
