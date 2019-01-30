@@ -7,10 +7,9 @@
 
 }
 
-.root {
+#root {
     height: 100vh;
     width: 100%;
-    position: absolute;
 }
 
 html, body {
@@ -27,6 +26,9 @@ html, body {
     width: 50%;
     background-image: url("img/terrain.png");
     background-size: cover;
+}
+#player{
+    position: absolute;
 }
 
 

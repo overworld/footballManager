@@ -47,7 +47,9 @@ class App extends Component {
                 <div className="case">
                 {listejoueur}
                     <br/>
+                    <div id="player">
                     <span>Joueur N°{this.state.currentPlayer}</span>
+                    </div>
                     <br/>
                 </div>
                 <div className="formulaire">
